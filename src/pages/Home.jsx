@@ -23,7 +23,12 @@ function Home() {
           <div className="locations">
             <div className="locations__grid">
               {data.map((item) => (
-                <Card key={item.id} title={item.location} img={item.cover} />
+                <Card
+                  key={item.id}
+                  id={item.id}
+                  title={item.location}
+                  img={item.cover}
+                />
               ))}
             </div>
           </div>

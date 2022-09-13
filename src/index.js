@@ -5,18 +5,20 @@ import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ErrorPage404 from './pages/ErrorPage404';
-
-/* import Accomodation from './pages/Accomodation'; */
+import Accomodation from './pages/Accomodation';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+/* const idRegex = /^[a-z0-9]{8}$/; */
+
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route index element={<Home />} />
-      {/* <Route path="/accomodation:id" element={<Accomodation />} /> */}
+      <Route path="/" element={<Home />} />
+      <Route path="/:id" element={<Accomodation />} />
       <Route path="/about" element={<About />} />
-      <Route path="/*" element={<ErrorPage404 />} />
+      <Route path="*" element={<ErrorPage404 />} />
+      <Route path="/error" element={<ErrorPage404 />} />
     </Routes>
   </BrowserRouter>
 );
