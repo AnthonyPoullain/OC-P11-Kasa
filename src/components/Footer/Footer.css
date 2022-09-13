@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: 209px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer__logo {
+  margin-bottom: 30px;
+}
+
+.footer__copyright {
+  font-size: clamp(12px, 3vw, 24px);
+  font-weight: 500;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+}

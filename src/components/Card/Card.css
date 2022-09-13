@@ -1,0 +1,38 @@
+.card {
+  color: var(--btn-txt-color);
+  font-weight: 500;
+  width: 100%;
+  height: 255px;
+  background: linear-gradient(180deg, var(--primary-color) 30%, black 150%);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+  transition: 250ms ease-in-out;
+}
+
+.card:not(:hover) img {
+  transition: 250ms ease-in-out;
+}
+
+.card__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    height: 340px;
+  }
+}
