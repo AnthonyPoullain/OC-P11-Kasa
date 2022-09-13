@@ -1,0 +1,21 @@
+.locations {
+  margin-bottom: clamp(20px, 5vw, 40px);
+}
+
+.locations__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .locations {
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 50px;
+  }
+
+  .locations__grid {
+    gap: 40px;
+  }
+}

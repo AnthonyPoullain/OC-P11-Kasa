@@ -1,0 +1,36 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  min-height: calc(100vh - 354px);
+}
+
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  margin: auto auto;
+}
+
+.error-code {
+  font-size: clamp(96px, 20vw, 288px);
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: clamp(15px, 3vw, 50px);
+}
+
+.error-name {
+  font-size: clamp(18px, 4vw, 36px);
+  line-height: 140%;
+  font-weight: 500;
+  margin-bottom: clamp(111px, 10vw, 182px);
+}
+
+.link-to-home {
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 500;
+  margin-bottom: 100px;
+}
