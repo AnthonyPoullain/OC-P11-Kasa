@@ -17,18 +17,27 @@
   z-index: 5;
 }
 
+.dropdown__btn--accomodation {
+  height: clamp(30px, 6vw, 52px);
+  border-radius: clamp(5px, 3vw, 10px);
+}
+
 .dropdown__text {
   color: var(--btn-txt-color);
   font-weight: 500;
   font-size: clamp(13px, 3vw, 24px);
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 10px;
   line-height: 1;
 }
 
+.dropdown__text--accomodation {
+  font-size: clamp(13px, 3vw, 18px);
+}
+
 .dropdown__arrow {
-  width: 15px;
-  margin: 0 5px;
+  width: clamp(15px, 3vw, 24px);
+  margin: 0 10px;
 }
 
 .dropdown__arrow--open {
@@ -36,15 +45,20 @@
 }
 
 .dropdown__content {
-  line-height: 1 4;
+  line-height: 1.4;
   margin-top: -8px;
   background-color: var(--secondary-color);
-  padding: clamp(17px, 3vw, 36px) clamp(10px, 3vw, 18px) clamp(10px, 3vw, 18px)
-    clamp(10px, 3vw, 18px);
+  padding: clamp(17px, 4vw, 36px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
+    clamp(10px, 4vw, 18px);
   font-size: clamp(12px, 3vw, 24px);
   border-radius: 5px;
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+.dropdown__content--accomodation {
+  margin-top: -13px;
+  padding: clamp(23px, 4vw, 41px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
+    clamp(10px, 4vw, 18px);
+  font-size: clamp(12px, 3vw, 18px);
+  border-radius: clamp(5px, 3vw, 10px);
 }

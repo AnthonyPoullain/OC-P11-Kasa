@@ -19,6 +19,7 @@ function About() {
           <div className="dropdown-section">
             {data.map((item) => (
               <Dropdown
+                type="about"
                 key={item.key}
                 text={item.title}
                 content={item.content}
