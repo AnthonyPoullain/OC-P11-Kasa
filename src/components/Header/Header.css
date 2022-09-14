@@ -18,6 +18,7 @@
 .nav {
   color: var(--primary-color);
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .link {
@@ -32,4 +33,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    text-transform: capitalize;
+  }
 }
