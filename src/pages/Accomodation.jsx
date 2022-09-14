@@ -9,7 +9,7 @@ function Accomodation() {
 
   useEffect(() => {
     const fetchData = async () => {
-      let result = getAccomodations();
+      let result = await getAccomodations();
       result = result.filter((item) => item.id === params.id);
       if (!result.length) navigate('/error');
       setData(result);
@@ -18,10 +18,10 @@ function Accomodation() {
   }, []);
 
   return (
-    <div>
+    <>
       {params.id} <br />
       {JSON.stringify(data)}
-    </div>
+    </>
   );
 }
 export default Accomodation;
