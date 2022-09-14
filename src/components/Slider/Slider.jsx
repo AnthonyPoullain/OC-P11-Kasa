@@ -30,14 +30,14 @@ function Slider({ title, images }) {
         type="button"
         className="slider__arrow slider__arrow--left"
       >
-        <img src={leftArrow} alt="previous" />
+        <img src={leftArrow} alt="Précédent" />
       </button>
       <button
         onClick={handleNext}
         type="button"
         className="slider__arrow slider__arrow--right"
       >
-        <img src={rightArrow} alt="next" />
+        <img src={rightArrow} alt="Suivant" />
       </button>
       <span className="slider__counter">
         {count + 1}/{images ? images.length : 0}

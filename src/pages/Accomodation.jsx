@@ -12,8 +12,8 @@ function Accomodation() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    const fetchData = () => {
-      let result = getAccomodations();
+    const fetchData = async () => {
+      let result = await getAccomodations();
       result = result.filter((item) => item.id === params.id);
       if (!result.length) navigate('/error');
       setData(...result);
