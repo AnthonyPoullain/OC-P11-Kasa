@@ -8,7 +8,8 @@
 }
 
 .logo {
-  height: clamp(47px, 7vw, 68px);
+  height: clamp(42px, 7vw, 68px);
+  width: fit-content;
 }
 
 .logo img {
@@ -22,9 +23,12 @@
 }
 
 .link {
-  margin-left: clamp(10px, 4vw, 60px);
   white-space: nowrap;
   font-size: clamp(12px, 3vw, 24px);
+}
+
+.link:nth-child(2) {
+  margin-left: clamp(10px, 4vw, 60px);
 }
 
 .link.active,

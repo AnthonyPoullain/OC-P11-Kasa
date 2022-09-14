@@ -5,11 +5,9 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
-        <Link to="/">
-          <img src={Logo} alt="" />
-        </Link>
-      </div>
+      <Link to="/" className="logo">
+        <img src={Logo} alt="" />
+      </Link>
       <nav className="nav">
         <NavLink className="link" to="/">
           Accueil
