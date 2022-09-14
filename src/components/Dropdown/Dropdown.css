@@ -48,7 +48,7 @@
   line-height: 1.4;
   margin-top: -8px;
   background-color: var(--secondary-color);
-  padding: clamp(17px, 4vw, 36px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
+  padding: clamp(17px, 4vw, 26px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
     clamp(10px, 4vw, 18px);
   font-size: clamp(12px, 3vw, 24px);
   border-radius: 5px;
@@ -57,7 +57,7 @@
 
 .dropdown__content--accomodation {
   margin-top: -13px;
-  padding: clamp(23px, 4vw, 41px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
+  padding: clamp(23px, 4vw, 31px) clamp(10px, 4vw, 18px) clamp(10px, 4vw, 18px)
     clamp(10px, 4vw, 18px);
   font-size: clamp(12px, 3vw, 18px);
   border-radius: clamp(5px, 3vw, 10px);
