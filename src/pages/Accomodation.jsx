@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import getAccomodations from '../api/getAccomodations';
 import Slider from '../components/Slider/Slider';
+import Dropdown from '../components/Dropdown/Dropdown';
 import './Accomodation.css';
 
 function Accomodation() {
@@ -21,7 +22,30 @@ function Accomodation() {
   }, []);
 
   return (
-    data && <Slider key={data.id} title={data.title} images={data.pictures} />
+    data && (
+      <>
+        <Slider key={data.id} title={data.title} images={data.pictures} />
+
+        <div className="dropdown__section">
+          <Dropdown
+            type="accomodation"
+            text="Description"
+            content={data.description}
+          />
+          <Dropdown
+            type="accomodation"
+            text="Équipements"
+            content={
+              <ul>
+                {data.equipments.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            }
+          />
+        </div>
+      </>
+    )
   );
 }
 

@@ -19,7 +19,7 @@
 
 .dropdown__btn--accomodation {
   height: clamp(30px, 6vw, 52px);
-  border-radius: clamp(5px, 3vw, 10px);
+  border-radius: 5px;
 }
 
 .dropdown__text {
@@ -61,4 +61,12 @@
     clamp(10px, 4vw, 18px);
   font-size: clamp(12px, 3vw, 18px);
   border-radius: clamp(5px, 3vw, 10px);
+  height: clamp(100px, 20vw, 200px);
+  overflow: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown__btn--accomodation {
+    border-radius: 10px;
+  }
 }
