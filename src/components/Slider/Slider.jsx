@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import leftArrow from '../../assets/slideshow_left-arrow.svg';
 import rightArrow from '../../assets/slideshow_right-arrow.svg';
+import './Slider.css';
 
 function Slider({ title, images }) {
   const [count, setCount] = useState(0);

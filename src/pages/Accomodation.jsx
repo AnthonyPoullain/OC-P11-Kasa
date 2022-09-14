@@ -8,7 +8,7 @@ function Accomodation() {
   const params = useParams();
   const navigate = useNavigate();
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
 
   useEffect(() => {
     const fetchData = () => {
