@@ -26,8 +26,6 @@ function Accomodation() {
   return (
     data && (
       <>
-        {console.log(data)}
-
         <Slider key={data.id} title={data.title} images={data.pictures} />
 
         <Details
