@@ -1,7 +1,13 @@
 import './ErrorPage404.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import tabTitle from '../../helpers/helperFunctions';
 
 function ErrorPage404() {
+  useEffect(() => {
+    tabTitle('Oups! Page non trouvée');
+  }, []);
+
   return (
     <div className="error-page">
       <div className="error-wrapper">

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import getAccomodations from '../api/getAccomodations';
-import Slider from '../components/Slider/Slider';
-import Dropdown from '../components/Dropdown/Dropdown';
-import Details from '../components/Details/Details';
+import getAccomodations from '../../api/getAccomodations';
+import Slider from '../../components/Slider/Slider';
+import Dropdown from '../../components/Dropdown/Dropdown';
+import Details from '../../components/Details/Details';
+import tabTitle from '../../helpers/helperFunctions';
 
 import './Accomodation.css';
 
@@ -12,6 +13,10 @@ function Accomodation() {
   const navigate = useNavigate();
 
   const [data, setData] = useState();
+
+  useEffect(() => {
+    tabTitle(data && data.title);
+  }, [data]);
 
   useEffect(() => {
     const fetchData = async () => {

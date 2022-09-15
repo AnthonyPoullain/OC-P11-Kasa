@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './global.css';
 import Layout from './pages/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import ErrorPage404 from './pages/ErrorPage404';
-import Accomodation from './pages/Accomodation';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import ErrorPage404 from './pages/ErrorPage/ErrorPage404';
+import Accomodation from './pages/Accomodation/Accomodation';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

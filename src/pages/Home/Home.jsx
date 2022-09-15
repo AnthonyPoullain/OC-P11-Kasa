@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'react';
-import getAccomodations from '../api/getAccomodations';
+import getAccomodations from '../../api/getAccomodations';
 import './Home.css';
-import Hero from '../components/Hero/Hero';
-import Card from '../components/Card/Card';
-import heroImg from '../assets/home_hero_img.png';
+import Hero from '../../components/Hero/Hero';
+import Card from '../../components/Card/Card';
+import heroImg from '../../assets/home_hero_img.png';
+import tabTitle from '../../helpers/helperFunctions';
 
 function Home() {
   const [data, setData] = useState();
+
+  useEffect(() => {
+    tabTitle('Accueil');
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
