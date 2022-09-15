@@ -10,7 +10,7 @@ function Layout() {
       <div className="container">
         <Header />
         <main>
-          <Outlet style={({ margin: 0 }, { padding: 0 })} />
+          <Outlet />
         </main>
       </div>
       <Footer />
