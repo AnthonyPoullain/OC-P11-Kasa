@@ -24,23 +24,27 @@ function Slider({ title, images }) {
 
   return (
     <div className="slider">
-      <img src={images ? images[count] : ''} alt={title} />
-      <button
-        onClick={handlePrevious}
-        type="button"
-        className="slider__arrow slider__arrow--left"
-      >
-        <img src={leftArrow} alt="Précédent" />
-      </button>
-      <button
-        onClick={handleNext}
-        type="button"
-        className="slider__arrow slider__arrow--right"
-      >
-        <img src={rightArrow} alt="Suivant" />
-      </button>
+      <img src={images[count]} alt={title} />
+      {images.length > 1 && (
+        <button
+          onClick={handlePrevious}
+          type="button"
+          className="slider__arrow slider__arrow--left"
+        >
+          <img src={leftArrow} alt="Précédent" />
+        </button>
+      )}
+      {images.length > 1 && (
+        <button
+          onClick={handleNext}
+          type="button"
+          className="slider__arrow slider__arrow--right"
+        >
+          <img src={rightArrow} alt="Suivant" />
+        </button>
+      )}
       <span className="slider__counter">
-        {count + 1}/{images ? images.length : 0}
+        {count + 1}/{images.length}
       </span>
     </div>
   );
