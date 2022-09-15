@@ -1,11 +1,12 @@
 .tag {
-  font-size: 14px;
+  font-size: clamp(10px, 2vw, 14px);
   font-weight: 500;
   color: var(--btn-txt-color);
   background-color: var(--primary-color);
-  width: 115px;
-  height: 25px;
-  border-radius: 10px;
+  min-width: clamp(74px, 15vw, 105px);
+  height: clamp(18px, 5vw, 25px);
+  padding: 0 10px;
+  border-radius: clamp(5px, 2vw, 10px);
   display: flex;
   align-items: center;
   justify-content: center;

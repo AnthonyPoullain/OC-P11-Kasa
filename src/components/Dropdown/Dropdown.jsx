@@ -48,7 +48,7 @@ function Dropdown({ text, content, type }) {
             : 'dropdown__content'
         }
       >
-        <p>{content}</p>
+        {content}
       </div>
     </div>
   );
