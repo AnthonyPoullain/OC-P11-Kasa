@@ -4,7 +4,7 @@ import getAccomodations from '../../api/getAccomodations';
 import Slider from '../../components/Slider/Slider';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Details from '../../components/Details/Details';
-import tabTitle from '../../helpers/helperFunctions';
+import { tabTitle } from '../../helpers/helperFunctions';
 
 import './Accomodation.css';
 

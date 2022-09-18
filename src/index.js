@@ -7,12 +7,14 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import ErrorPage404 from './pages/ErrorPage/ErrorPage404';
 import Accomodation from './pages/Accomodation/Accomodation';
+import { ScrollToTop } from './helpers/helperFunctions';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />

@@ -4,7 +4,7 @@ import Hero from '../../components/Hero/Hero';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import heroImg from '../../assets/about_hero_img.png';
 import getAboutInfo from '../../api/getAboutInfo';
-import tabTitle from '../../helpers/helperFunctions';
+import { tabTitle } from '../../helpers/helperFunctions';
 
 function About() {
   const [data, setData] = useState();

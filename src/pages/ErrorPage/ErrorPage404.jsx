@@ -1,7 +1,7 @@
 import './ErrorPage404.css';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import tabTitle from '../../helpers/helperFunctions';
+import { tabTitle } from '../../helpers/helperFunctions';
 
 function ErrorPage404() {
   useEffect(() => {

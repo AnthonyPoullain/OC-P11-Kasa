@@ -4,7 +4,7 @@ import './Home.css';
 import Hero from '../../components/Hero/Hero';
 import Card from '../../components/Card/Card';
 import heroImg from '../../assets/home_hero_img.png';
-import tabTitle from '../../helpers/helperFunctions';
+import { tabTitle } from '../../helpers/helperFunctions';
 
 function Home() {
   const [data, setData] = useState();
