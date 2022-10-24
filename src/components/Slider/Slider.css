@@ -5,6 +5,7 @@
   border-radius: clamp(10px, 3vw, 25px);
   margin-bottom: 30px;
   position: relative;
+  background-color: var(--secondary-color);
 }
 
 .slider img {
