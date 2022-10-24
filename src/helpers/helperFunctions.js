@@ -6,13 +6,10 @@ import { useLocation } from 'react-router-dom';
  * The suffix ' - Kasa' is automatically added.
  *
  * @param {string} newTitle - New tab title
- *
- * @example
- * 		tabTitle('New tab title here');
  */
 export function tabTitle(newTitle) {
-  if (!newTitle) return;
-  document.title = `${newTitle} - Kasa`;
+	if (!newTitle) return;
+	document.title = `${newTitle} - Kasa`;
 }
 
 /**
@@ -20,11 +17,11 @@ export function tabTitle(newTitle) {
  * (From react router docs)
  */
 export function ScrollToTop() {
-  const { pathname } = useLocation();
+	const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
 
-  return null;
+	return null;
 }
