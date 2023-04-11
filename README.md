@@ -6,7 +6,7 @@
 
 This repo contains the source code to run the hotel reservation website **Kasa**, from project **#11** of **OpenClassrooms' Javascript & React developer course**.
 
-<img width="400px" src="" />
+![kasa_preview](https://user-images.githubusercontent.com/68517837/231076205-85c881c5-e538-48a2-915d-3d03676708f1.gif)
 
 </div>
 
@@ -24,6 +24,7 @@ This repo contains the source code to run the hotel reservation website **Kasa**
 
 - Organize code for maintainability & make it easy to replace mock JSON data with API when ready 
 - Optimize (pre)loading of images in the background for smooth carousel navigation
+- Update tab title on route change
 
 ## 📝 Installation
 
